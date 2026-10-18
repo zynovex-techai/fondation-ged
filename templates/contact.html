@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+    <title>FONDATION SAMA</title>
+</head>
+<body>
+    <!--========================= header =================================================-->
+    <header class="header">
+        <div class="topbar">
+            <div class="topbar-left">
+                <span> kinshasa, RDC</span>
+                <span> contact@fondationsama.org</span>
+                <span>+243 82 000 00 00</span>
+            </div>
+
+            <div class="topbar-right">
+                <span>f</span>
+                <span>x</span>
+                <span>in</span>
+
+                <a href="" class="donation-small"> Faire un don</a>
+            </div>
+        </div>
+        <nav class="navbar">
+            <div class="brand">
+                <img class="logo" src="images/logo sama.png" alt="logo fondation SAMA">
+                <div class="brand-text">
+                    <strong >FONDATION SAMA </strong>
+                    <small>eduquer, autonomiser, developper</small>
+                </div>
+            </div>
+        
+            
+            <ul class="nav-links">
+                <li><a href="index.html">accueil</a></li>
+                <li><a href="apropos.html">a propos</a></li>
+                <li><a href="domaines.html">domaines</a></li>
+                <li><a href="projets.html">projets </a></li>
+                <li><a href="actualites.html">actualites</a></li>
+                <li><a href="galerie.html">galerie</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+<!-- ================================== main ===================-->
+
+    <main>
+        <!-- ===================== hero contact =================================-->
+         <section class="contact-hero">
+            <div class="contact-hero-content">
+                <span class="petit-titre">
+                    CONTACTEZ-NOUS
+                </span>
+                <h1>
+                    Nous sommes <strong>a votre ecoute</strong>
+                </h1>
+                <p>
+                    une question, une proposition ou l'envie de collaborer avec nous ?
+                    notre equipe est a votre disposition.
+                </p>
+            </div>
+         </section>
+         <!-- ================ information de contact ===========================-->
+          <section class="contact-section">
+                <div class="titre-section">
+                    <span>
+                        RESTONS EN CONTACT
+                    </span>
+                    <h2>
+                        comment pouvons-nous vous aider ?
+                    </h2>
+                </div>
+
+                <div class="contact-informations">
+                    <!--  adresse -->
+                    <div class="contact-card">
+                        <div class="contact-icon">📍</div>
+                        <h3>Notre adresse</h3>
+                        <p>
+                            kinshasa, republique democratique du congo
+                        </p>
+                    </div>
+
+                    <!--  TELEPHONE -->
+
+                    <div class="contact-card">
+                        <div class="contact-icon">📞</div>
+                        <h3>Telephone</h3>
+                        <p>+243 82 000 00 00</p>
+                        <p>+243 81 000 00 00</p>
+                    </div>
+
+                    <!-- email -->
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            📩
+                        </div>
+                        <h3>
+                            Adresse email
+                        </h3>
+                        <p>contact@fondationsama.org</p>
+                    </div>
+
+                    <!--  horaires -->
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            ⏱️
+                        </div>
+                        <h3>
+                            horaires
+                        </h3>
+                        <p>
+                             lundi - vendredi
+                        </p>
+
+                        <p>08h00 - 17h00 </p>
+                    </div>
+                </div>
+          </section>
+
+          <!--========================= formulaire + localisation ================================-->
+
+          <section class="contact-form-section">
+                <!-- formulaire -->
+
+                <div class="formulaire-container">
+                    <span class="formulaire-titre">ENVOYEZ-NOUS UN MESSAGE</span>
+                    <h2>
+                        Parlons de votre projet
+                    </h2>
+                    <p>
+                        remplissez le formulaire ci-dessous et nous vous repondrons dans les meilleurs delais.
+                    </p>
+
+                    <form action="" class="formular" id="contactForm">
+                        <!-- nom -->
+                        <div class="text-info">
+                        <div class="form-group">
+                            <label for="nom">Nom complet</label>
+                            <input type="text" id="nom" name="nom" placeholder="votre nom complet" required>
+                        </div>
+
+                        <!--  email-->
+
+                        <div class="form-group">
+                            <label for="email">adresse</label>
+                            <input type="email" id="email" name="email" placeholder="exemple@email.com">
+                        </div>
+
+                        <!-- telephone -->
+
+                        <div class="form-group">
+                            <label for="telephone">telephone</label>
+                            <input type="tel" id="telephone" name="telephone" placeholder="+243 ...">
+                        </div>
+
+                        <!-- sujet -->
+
+                        <div class="form-group">
+                            <label for="sujet">sujet</label>
+                            <select name="sujet" id="sujet">
+                                <option value=""> choisissez un sujet</option>
+                                <option value="information">demande d'information </option>
+                                <option value="partenariat">partenariat</option>
+                                <option value="projet">proposition de projet </option>
+                                <option value="don">Don</option>
+                                <option value="autre">autre</option>
+                            </select>
+                        </div>
+
+                        <!-- message -->
+
+                        <div class="form-group form-message">
+                            <label for="message">votre message</label>
+                            <textarea name="message" id="message" rows="6" placeholder="ecrivez votre message ici..." required></textarea>
+                        </div>
+                        </div>
+                        <!-- button-->
+                        <div id="formMessage"></div>
+                        <button type="button" class="envoyer-button">
+                            envoyer les message
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Localisation -->
+
+                <div class="localisation-container">
+                    <div class="localisation-image">
+                        <div class="localisation-titre">
+                            <span></span>
+                            <h2>Notre localisation</h2>
+                        </div>
+                        <div class="image-location">
+                            <img src="images/22620.jpg" alt="localisation de la fondation sama">
+                        </div>
+                        <div class="localisation-message">
+                            <span>📍</span>
+                            <div>
+                                <strong>Fondation SAMA</strong>
+                                <p>
+                                    kinshasa, RDC
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- RESEAUX SOCIAUX -->
+
+                    <div class="reseaux-sociaux">
+                        <div class="titre-suiver">
+                            <span></span>
+                            <h3>
+                                suivez-nous
+                            </h3>
+                        </div>
+                        <p>
+                            retrouvez la Fondation SAMA sur nos reseaux sociaux.
+                        </p>
+                        <div class="social-links">
+                            <div class="social">
+                                <div>f</div>
+                                <a href="#">Facebook</a>
+                            </div>
+                            <div class="social">
+                                <div>In</div>
+                                <a href="">linkedIn</a>
+                            </div>
+                            <div class="social">
+                                <div>Y</div>
+                                <a href="">YouTube</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+          </section>
+
+          <!-- ============================= appel a l'action ============================-->
+
+          <section class="contact-cta">
+                <div>
+                    <h2>Ensemble pour <strong>un avenir meilleur</strong></h2>
+                    <p>
+                        votre soutien peut contribuer a transformer des vies et des communautes.
+                    </p>
+                </div>
+                <div class="btn-don">
+                <a href="don.html" class="cta-don">  Faire un don </a>
+                <a href="projets.html" class="cta-projets">decouvrir nos projets</a>
+                </div>
+          </section>
+    </main>
+
+
+
+
+
+
+
+
+
+
+<!--============================================= footer ==================================================-->
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <img src="images/logo sama.png" alt="logo fondation SAMA">
+                <h3>FONDATION SAMA</h3>
+                <p>
+                    eduquer, autonomiser, developper
+                </p>
+            </div>
+            <div>
+                <h4>liens utiles</h4>
+                <a href="#index.html">accueil</a>
+                <a href="apropos.html">a propos</a>
+                <a href="domaines.html">domaines</a>
+                <a href="projets.html">projets </a>
+                <a href="actualites.html">actualites</a>
+
+            </div>
+            <div>
+                <h4>decouvrir </h4>
+                
+                <a href="galerie.html">galerie</a>
+                <a href="">partenaires</a>
+                <a href=""> Nous soutenir</a>
+                <a href="contact.html">contact</a>
+
+            </div>
+
+            <div>
+                <h4>
+                    contact
+                </h4>
+                <p> kinshasa, RDC</p>
+                <p>+243 82 000 00 00</p>
+                <p>contact@fondationsama.org</p>
+            </div>
+            
+        </div>
+        <div class="footer-bottom">
+            <p>
+                2026 Fondation SAMA. Tous droits reserves.
+            </p>
+            <div>
+                <a href="#">politique de confidentialite</a>
+                <a href="#">Mentions legales</a>
+            </div>
+        </div>
+
+    </footer>
+<script ></script>
+</body>
+</html>

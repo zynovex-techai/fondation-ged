@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="don.css">
+    <title>FONDATION SAMA</title>
+</head>
+<body>
+    <!--========================= header =================================================-->
+    <header class="header">
+        <div class="topbar">
+            <div class="topbar-left">
+                <span> kinshasa, RDC</span>
+                <span> contact@fondationsama.org</span>
+                <span>+243 82 000 00 00</span>
+            </div>
+
+            <div class="topbar-right">
+                <span>f</span>
+                <span>x</span>
+                <span>in</span>
+
+                <a href="" class="donation-small"> Faire un don</a>
+            </div>
+        </div>
+        <nav class="navbar">
+            <div class="brand">
+                <img class="logo" src="images/logo sama.png" alt="logo fondation SAMA">
+                <div class="brand-text">
+                    <strong >FONDATION SAMA </strong>
+                    <small>eduquer, autonomiser, developper</small>
+                </div>
+            </div>
+        
+            
+            <ul class="nav-links">
+                <li><a href="index.html">accueil</a></li>
+                <li><a href="apropos.html">a propos</a></li>
+                <li><a href="domaines.html">domaines</a></li>
+                <li><a href="projets.html">projets </a></li>
+                <li><a href="actualites.html">actualites</a></li>
+                <li><a href="galerie.html">galerie</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+<main>
+<section class="don-hero">
+    <div class="don-hero-content">
+        <h1>Faire un don</h1>
+        <p>Votre soutien contribue à créer des opportunités et à améliorer durablement la vie des communautés.</p>
+        <a href="#don-form" class="don-hero-button">Soutenir nos actions</a>
+    </div>
+</section>    
+
+<section class="don-section">
+    <div class="don-container">
+
+        <div class="don-introduction">
+            <span class="section-label">SOUTENEZ NOS ACTIONS</span>
+            <h2>Votre contribution peut changer une vie</h2>
+
+            <p>
+                Chaque contribution permet à la Fondation Sama de soutenir
+                des initiatives dans l'éducation, la jeunesse, la santé,
+                la formation professionnelle et le développement communautaire.
+            </p>
+
+            <div class="don-benefits">
+                <div class="benefit-item"><span>✓</span><p>Éducation et accompagnement des jeunes</p></div>
+                <div class="benefit-item"><span>✓</span><p>Formation professionnelle</p></div>
+                <div class="benefit-item"><span>✓</span><p>Autonomisation des femmes</p></div>
+                <div class="benefit-item"><span>✓</span><p>Actions de santé et projets communautaires</p></div>
+            </div>
+        </div>
+
+        <div class="don-card" id="don-form">
+            <div class="don-card-header">
+                <h2>Soutenir nos actions</h2>
+                <p>Choisissez le montant que vous souhaitez offrir.</p>
+            </div>
+
+            <div class="form-group">
+                <label for="montant">Montant du don</label>
+                <div class="amount-input">
+                    <input type="number" id="montant" name="montant" min="1" placeholder="Montant libre">
+                    <span>USD</span>
+                </div>
+            </div>
+
+            <div class="amount-title">Montant rapide</div>
+
+            <div class="amount-options">
+                <button type="button">$10</button>
+                <button type="button">$25</button>
+                <button type="button">$50</button>
+                <button type="button">$100</button>
+            </div>
+
+            <div class="form-group">
+                <label for="cause">Je souhaite soutenir</label>
+                <select id="cause" name="cause">
+                    <option value="education">Éducation</option>
+                    <option value="formation">Formation professionnelle</option>
+                    <option value="sante">Santé</option>
+                    <option value="femmes">Autonomisation des femmes</option>
+                    <option value="jeunesse">Jeunesse</option>
+                    <option value="communautaire">Projets communautaires</option>
+                </select>
+            </div>
+
+            <button type="button" class="don-button">Faire un don</button>
+            <div class="don-summary" id="don-summary"></div>
+            <p class="secure-text">🔒 Vos informations seront traitées de manière sécurisée.</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="why-donate">
+    <div class="why-container">
+        <div class="section-heading1">
+            <span class="section-label">VOTRE IMPACT</span>
+            <h2>Pourquoi votre don est important ?</h2>
+            <p>Votre soutien nous aide à développer des actions concrètes au service des communautés.</p>
+        </div>
+
+        <div class="impact-grid">
+            <div class="impact-card">
+                <div class="impact-icon">🎓</div>
+                <h3>Éducation</h3>
+                <p>Contribuer à l'accès à une éducation de qualité pour les jeunes.</p>
+            </div>
+
+            <div class="impact-card">
+                <div class="impact-icon">💼</div>
+                <h3>Formation</h3>
+                <p>Soutenir l'acquisition de compétences professionnelles.</p>
+            </div>
+
+            <div class="impact-card">
+                <div class="impact-icon">❤️</div>
+                <h3>Santé</h3>
+                <p>Participer à des initiatives visant à améliorer l'accès aux services essentiels.</p>
+            </div>
+
+            <div class="impact-card">
+                <div class="impact-icon">🤝</div>
+                <h3>Communautés</h3>
+                <p>Accompagner des projets qui renforcent l'autonomie des communautés.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="don-cta">
+    <div class="don-cta-content">
+        <h2>Ensemble, construisons un avenir meilleur</h2>
+        <p>Chaque geste compte. Votre soutien peut contribuer à transformer durablement une vie.</p>
+        <a href="#don-form" class="don-cta-button">Soutenir la Fondation Sama</a>
+    </div>
+</section>
+
+</main>
+
+<footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <img src="images/logo sama.png" alt="logo fondation SAMA">
+                <h3>FONDATION SAMA</h3>
+                <p>
+                    eduquer, autonomiser, developper
+                </p>
+            </div>
+            <div>
+                <h4>liens utiles</h4>
+                <a href="index.html">accueil</a>
+                <a href="apropos.html">a propos</a>
+                <a href="domaines.html">domaines</a>
+                <a href="projets.html">projets </a>
+                <a href="actualites.html">actualites</a>
+
+            </div>
+            <div>
+                <h4>decouvrir </h4>
+                
+                <a href="">galerie</a>
+                <a href="">partenaires</a>
+                <a href=""> Nous soutenir</a>
+                <a href="">contact</a>
+
+            </div>
+
+            <div>
+                <h4>
+                    contact
+                </h4>
+                <p> kinshasa, RDC</p>
+                <p>+243 82 000 00 00</p>
+                <p>contact@fondationsama.org</p>
+            </div>
+            
+        </div>
+        <div class="footer-bottom">
+            <p>
+                2026 Fondation SAMA. Tous droits reserves.
+            </p>
+            <div>
+                <a href="#">politique de confidentialite</a>
+                <a href="#">Mentions legales</a>
+            </div>
+        </div>
+
+    </footer>
+    <script src="don.js"></script>
+</body>
+</html>

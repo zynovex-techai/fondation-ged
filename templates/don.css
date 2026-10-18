@@ -1,0 +1,370 @@
+/* PAGE FAIRE UN DON - FONDATION SAMA */
+
+.don-hero {
+    min-height: 360px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 70px 20px;
+    background:
+        linear-gradient(rgba(0,60,110,.80), rgba(0,60,110,.80)),
+        url("images/22617.jpg") center/cover no-repeat;
+}
+
+.don-hero-content {
+    max-width: 780px;
+    color: #fff;
+}
+
+.don-hero-content h1 {
+    font-size: 50px;
+    margin: 0 0 15px;
+}
+
+.don-hero-content p {
+    max-width: 650px;
+    margin: 0 auto 28px;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.don-hero-button,
+.don-cta-button {
+    display: inline-block;
+    padding: 14px 28px;
+    border-radius: 8px;
+    background: #f2c94c;
+    color: #063b68;
+    text-decoration: none;
+    font-weight: 700;
+    transition: .3s;
+}
+
+.don-hero-button:hover,
+.don-cta-button:hover {
+    transform: translateY(-2px);
+    background: #fff;
+}
+
+.don-section {
+    padding: 80px 20px;
+    background: #f7f9fc;
+}
+
+.don-container {
+    max-width: 1150px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.section-label {
+    display: inline-block;
+    margin-bottom: 12px;
+    color: #0878bd;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.don-introduction h2 {
+    max-width: 550px;
+    color: #063b68;
+    font-size: 38px;
+    line-height: 1.2;
+    margin: 0 0 20px;
+}
+
+.don-introduction > p {
+    color: #606060;
+    line-height: 1.8;
+    margin-bottom: 28px;
+}
+
+.don-benefits {
+    display: grid;
+    gap: 15px;
+}
+
+.benefit-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.benefit-item span {
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: #e7f4fb;
+    color: #0878bd;
+    font-weight: 700;
+}
+
+.benefit-item p {
+    margin: 0;
+    color: #444;
+}
+
+.don-card {
+    padding: 35px;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 10px 35px rgba(0,0,0,.09);
+}
+
+.don-card-header {
+    margin-bottom: 28px;
+}
+
+.don-card-header h2 {
+    margin: 0 0 8px;
+    color: #063b68;
+    font-size: 28px;
+}
+
+.don-card-header p {
+    margin: 0;
+    color: #666;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label,
+.amount-title {
+    display: block;
+    margin-bottom: 9px;
+    color: #173f5f;
+    font-weight: 600;
+}
+
+.amount-input {
+    display: flex;
+    align-items: center;
+    border: 1px solid #d5dce3;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.amount-input input {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.amount-input span {
+    padding: 0 15px;
+    color: #666;
+    font-weight: 600;
+}
+
+.amount-options {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.amount-options button {
+    padding: 12px 8px;
+    border: 1px solid #cbd9e3;
+    border-radius: 8px;
+    background: #fff;
+    color: #063b68;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.amount-options button:hover {
+    border-color: #0878bd;
+    background: #eaf5fb;
+}
+
+.form-group select {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #d5dce3;
+    border-radius: 8px;
+    background: #fff;
+    color: #333;
+    font-size: 15px;
+    outline: none;
+}
+
+.don-button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background: #0878bd;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.don-button:hover {
+    background: #063b68;
+    transform: translateY(-2px);
+}
+
+.secure-text {
+    margin: 15px 0 0;
+    text-align: center;
+    color: #777;
+    font-size: 13px;
+}
+
+.why-donate {
+    padding: 80px 20px;
+    background: #fff;
+}
+
+.why-container {
+    max-width: 1150px;
+    margin: auto;
+}
+
+.section-heading1 {
+    max-width: 700px;
+    margin: 0 auto 45px;
+    text-align: center;
+}
+
+.section-heading1 h2 {
+    color: #063b68;
+    font-size: 34px;
+    margin: 0 0 15px;
+}
+
+.section-heading1 p {
+    color: #666;
+    line-height: 1.7;
+}
+
+.impact-grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+
+.impact-card {
+    padding: 30px 22px;
+    text-align: center;
+    border: 1px solid #e4ebf0;
+    border-radius: 12px;
+    background: #fff;
+    transition: .3s;
+}
+
+.impact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,.07);
+}
+
+.impact-icon {
+    width: 55px;
+    height: 55px;
+    margin: auto auto 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #eaf5fb;
+    font-size: 25px;
+}
+
+.impact-card h3 {
+    margin: 0 0 10px;
+    color: #063b68;
+}
+
+.impact-card p {
+    margin: 0;
+    color: #666;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+.don-cta {
+    padding: 75px 20px;
+    text-align: center;
+    background:
+        linear-gradient(rgba(6,59,104,.93), rgba(6,59,104,.93)),
+        url("../images/don.jpg") center/cover no-repeat;
+}
+
+.don-cta-content {
+    max-width: 750px;
+    margin: auto;
+    color: #fff;
+}
+
+.don-cta h2 {
+    font-size: 36px;
+    margin: 0 0 15px;
+}
+
+.don-cta p {
+    line-height: 1.7;
+    margin-bottom: 28px;
+}
+
+
+
+
+
+@media (max-width: 950px) {
+    .don-container {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .impact-grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (max-width: 700px) {
+    .don-hero-content h1 {
+        font-size: 38px;
+    }
+
+    .don-hero-content p {
+        font-size: 16px;
+    }
+
+    .don-introduction h2 {
+        font-size: 32px;
+    }
+
+    .don-card {
+        padding: 25px 20px;
+    }
+
+    .amount-options {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .impact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .don-cta h2 {
+        font-size: 30px;
+    }
+}

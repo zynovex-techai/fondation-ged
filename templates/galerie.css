@@ -1,0 +1,268 @@
+.galerie-hero{
+    min-height: 350px;
+    display: flex;
+    align-items: center;
+    padding: 50px 5%;
+
+    background: 
+        linear-gradient(
+            90deg,
+            rgba(0, 61, 112, 0.98),
+            rgba(0, 61, 112, 0.25)
+        ),
+        url("images/22615.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.galerie-hero-content {
+    max-width: 600px;
+    color: white;
+}
+.petit-titre {
+    display: inline-block;
+    padding: 5px 15px;
+
+    border: 1px solid white;
+    border-radius: 20px;
+
+    font-size: 13px;
+}
+
+.galerie-hero h1 {
+    margin: 20px 0;
+
+    font-size: 50px;
+    line-height: 1.1;
+}
+
+.galerie-hero h1 strong {
+    display: block;
+    color: #f5b900;
+}
+
+.galerie-hero p {
+    max-width: 560px;
+    font-size: 17px;
+}
+
+/* ======================= filtres ======================= */
+
+.galerie-filtres {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+
+    padding: 30px 5%;
+}
+
+.galerie-filtres button{
+    padding: 11px 23px;
+
+    border: 1px solid #c9ddec;
+    border-radius: 25px;
+
+    background-color: white;
+    color: #064d87;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.galerie-filtres button:hover,
+.galerie-filtres .filtre-actif{
+    background-color: #064d87;
+    color: white;
+}
+
+/* ============= titre de section ================ */
+
+.galerie-section{
+    padding: 20px 5% 70px;
+}
+
+.titre-section{
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.titre-section span{
+    color: #f5b900;
+    font-size: 13px;
+    font-weight: bold;
+}
+.titre-section h2{
+    margin-top:  8px;
+    color: #064d87;
+}
+
+/* ========================= grille de la galerie ===================== */
+
+.galerie-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+/* ============================ carte photo ================================ */
+
+.photo-card {
+    position: relative;
+
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #eaf3f9;
+    cursor: pointer;
+}
+
+.photo-card img {
+    transform: scale(1.08);
+}
+
+/*  text sur l'image */
+
+.photo-card figcaption {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    padding: 10px;
+
+    background: linear-gradient(
+        180deg,
+    rgba(231, 198, 6)
+    );
+    
+    
+    color: white;
+    font-weight: bold;
+
+    opacity: 0;
+    transform: translateY(15px);
+    transition: 0.3s;
+}
+
+.photo-card:hover figcaption {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ================== appel a l'action ====================*/
+
+.galery-cta{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    margin: 0 5% 60px;
+    padding: 40px;
+
+    border-radius: 15px;
+
+    background-color: #064d87;
+    color: white;
+}
+
+.galery-cta h2 {
+    font-size: 28px;
+}
+
+.galery-cta h2 strong {
+    display: block;
+    color: #f5b900;
+}
+
+.galery-cta p {
+    margin-top: 8px;
+}
+.galery-cta a {
+    padding: 12px 23px;
+    border-radius: 25px;
+    white-space: nowrap ;
+    font-weight: bold;
+}
+
+.cta-don {
+    background-color: #f5b900;
+    color: #123f70;
+}
+.cta-contact {
+    border: 1px solid white;
+    color: white;
+}
+.galery-cta a:hover {
+    transform: translateY(-3px);
+}
+
+
+/* ====================tablette====================*/
+
+@media screen and (max-width:900px) {
+    .galerie-grid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+}
+
+@media screen and (max-width: 500px) {
+    .galerie-hero{
+        min-height: 420px;
+    }
+    .galerie-hero h1 {
+        font-size: 35px;
+    }
+    .galerie-grid{
+        grid-template-columns: 1fr;
+    }
+    .photo-card{
+        height: 260px;
+    }
+    .galerie-section{
+        padding: 30px 5%;
+    }
+    .galery-cta{
+        padding: 30px;
+    }
+}
+
+.photo-modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.85);
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+    gap: 15px;
+
+    padding: 30px;
+    z-index: 9999;
+}
+
+.photo-modal img {
+    max-width: 90%;
+    max-height: 80vh;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.photo-modal p {
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
+
+.modal-close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+
+    border: none;
+    background: transparent;
+    color: white;
+
+    font-size: 40px;
+    cursor: pointer;
+}

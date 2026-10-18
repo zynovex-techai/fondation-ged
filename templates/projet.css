@@ -1,0 +1,203 @@
+.hero-projets{
+    min-height: 360px;
+
+    background: 
+    linear-gradient(
+        90deg,
+        rgba(0, 61, 112, 0.98),
+        rgba(0, 61, 112, 0.25)
+    ),
+    url("images/22618.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+
+    padding: 50px 5%;
+}
+
+.hero-contenu {
+    max-width: 600px;
+    color: white;
+}
+
+.hero-contenu > span {
+    display: inline-block;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    padding: 5px 15px;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.hero-contenu h1 {
+    font-size: 48px;
+    line-height: 1.1;
+
+    margin: 20px 0;
+}
+.hero-contenu h1 strong{
+    display: block;
+    color: #f5b900;
+}
+.hero-contenu p{
+    max-width: 550px;
+    font-size: 17px;
+}
+
+/* ====================== 4. filtres ================*/
+
+.filtres-projets{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 30px 5%;
+}
+
+.filtres-projets button{
+    background-color: white;
+    border: 1px solid #c9ddec;
+    border-radius: 25px;
+    padding: 10px 22px;
+    color: #064d87;
+    cursor: pointer;
+}
+.filtres-projets button:hover{
+    background-color: #064d87;
+    color: white;
+}
+
+
+/*================== grille du projet ===================*/
+
+.liste-projets{
+    padding: 20px 5% 60px;
+}
+
+.liste-projets > h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.grille-projets{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.carte-projet{
+    background-color: white;
+    border: 1px solid #e1edf5;
+    border-radius: 12px;
+    padding: 15px ;
+    overflow: hidden;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+.carte-projet:hover{
+    transform: translateY(-6px);
+}
+.carte-projet img{
+    width: 100%;
+    height: 200px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+.carte-projet .categorie {
+    display: inline-block;
+    margin: 15px 15px 5px;
+    padding: 5px 12px;
+    border-radius: 20px;
+    background-color: #e9f5ff;
+    color: #064d87;
+
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.carte-projet h3{
+    margin: 5px 15px 10px;
+    font-size: 21px;
+    color: #064d87;
+}
+.lieu-date,
+.carte-projet p{
+    margin: 0 15px 15px;
+
+    color:#325775 ;
+    font-size: 15px;
+}
+.lieu-date{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.carte-projet a{
+    margin-left: 15px;
+    color: #064d87;
+    font-weight: bold;
+}
+.carte-projet a:hover{
+    color: #f5b900;
+}
+
+
+/*============= appel au don ==================*/
+
+.appel-don{
+    margin: 20px 5% 60px;
+    padding: 40px;
+    background-color: #064d87;
+    color: white;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.appel-don h2{
+    font-size: 28px;
+}
+.appel-don p{
+    margin-top: 5px;
+}
+
+.appel-don a{
+    background-color: #f5b900;
+    color: #123f70;
+    padding: 12px 22px;
+    border-radius: 25px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+/*================== responsive =================*/
+
+@media screen and (max-width: 850px) {
+    .grille-projets{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .hero-projets{
+        min-height: 450px;
+    }
+    .hero-contenu h1{
+        font-size: 35px;
+    }
+    .grille-projets{
+        grid-template-columns: 1fr;
+    }
+    .appel-don{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
